@@ -99,4 +99,4 @@ if __name__ == "__main__":
     if "stdio" in arguments:
         mcp.run()
     else:
-        mcp.run(transport="http", host="0.0.0.0", port=8000)
+        mcp.run(TRANSPORT, host="0.0.0.0", port=8000)
