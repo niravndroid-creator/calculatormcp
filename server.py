@@ -5,7 +5,7 @@ from mcp.server.fastmcp import FastMCP
 
 CONFIG_PATH = Path(__file__).parent / "config.json"
 VALID_DATA_TYPES = {"integer", "float", "both"}
-VALID_TRANSPORTS = {"stdio", "streamable-http", "sse"}
+VALID_TRANSPORTS = {"stdio", "http", "sse"}
 
 
 def load_config() -> dict:
