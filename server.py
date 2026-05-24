@@ -1,7 +1,10 @@
 import json
 from pathlib import Path
+import sys
 from typing import Union
 from mcp.server.fastmcp import FastMCP
+
+arguments = sys.argv[1:]
 
 CONFIG_PATH = Path(__file__).parent / "config.json"
 VALID_DATA_TYPES = {"integer", "float", "both"}
