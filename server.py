@@ -99,7 +99,4 @@ def multiply(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
 
 
 if __name__ == "__main__":
-    if "stdio" in arguments:
-        mcp.run()
-    else:
-        mcp.run(TRANSPORT, host="0.0.0.0", port=8000)
+    mcp.run(TRANSPORT, host="0.0.0.0", port=8000)
