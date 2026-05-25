@@ -55,6 +55,7 @@ TRANSPORT: str = config["transport"]
 
 mcp = FastMCP(
     name="calculator",
+    host="0.0.0.0",
     instructions=(
         f"A calculator MCP server supporting addition and multiplication. "
         f"Configured data_type: '{DATA_TYPE}'. "
