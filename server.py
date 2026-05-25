@@ -99,4 +99,4 @@ def multiply(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
 
 
 if __name__ == "__main__":
-    mcp.run(transport="streamable-http", port=8000, debug=True, host="0.0.0.0")
+    mcp.run(transport="streamable-http", port=8000, host="0.0.0.0")
