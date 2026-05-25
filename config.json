@@ -1,4 +1,4 @@
 {
   "data_type": "both",
-  "transport": "http"
+  "transport": "streamable-http"
 }

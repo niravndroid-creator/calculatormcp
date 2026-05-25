@@ -8,7 +8,7 @@ arguments = sys.argv[1:]
 
 CONFIG_PATH = Path(__file__).parent / "config.json"
 VALID_DATA_TYPES = {"integer", "float", "both"}
-VALID_TRANSPORTS = {"stdio", "http", "sse"}
+VALID_TRANSPORTS = {"stdio", "streamable-http", "sse"}
 
 
 def load_config() -> dict:
@@ -99,4 +99,4 @@ def multiply(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
 
 
 if __name__ == "__main__":
-    mcp.run(transport="streamable-http", host="0.0.0.0", port=8000)
+    mcp.run(transport="streamable-http")
